@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phonesize.css">
+    <link rel="stylesheet" media="screen and (max-width:695px)" href="phonesize2.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a class= "active" href="skills.html">SKILLS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACTS</a></li>
+        </ul>
+    </nav>
+
+    <section id="skills">
+        <h1 class="heading"></h1>
+        <div class="columns">
+            <div class="box">
+                <h2>• I have experiences using <span style="color: antiquewhite;">ADOBE Photoshop</span>
+                   for enhancing and editing photos</h2><br>
+            </div>
+            <div class="box">
+                <h2>• <span style="color: antiquewhite;">Digital or non digital</span>
+                    I can animate and draw<br></h2>
+            </div>
+            <div class="box">
+                <h2>• I am <span style="color: antiquewhite;">hardworking person</span><br>
+                    I can catch up and do the task in time</h2>
+            </div>
+            <div class="box">
+                <h2>• I can create a basic application
+                    using <span style="color: antiquewhite;">React Js</span></h2>
+            </div>
+            <div class="box">
+                <h2>• I have projects using only<span style="color: antiquewhite;"> C Language</span>,
+                    my first programming language</h2><br>
+            </div>
+            <div class="box">
+                <h2>• <span style="color: antiquewhite;">Flexibility</span> and <span style="color: antiquewhite;">time managing</span>
+                    is my first priority</h2><br>
+            </div>
+        </div>
+    </section>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>

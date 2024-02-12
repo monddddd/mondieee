@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phonesize.css">
+    <link rel="stylesheet" media="screen and (max-width:695px)" href="phonesize2.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a class= "active" href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACTS</a></li>
+        </ul>
+    </nav>
+    
+    <section id="projects">
+        <div class="gallery">
+            <div class="gallery1">
+                <img src="picture/robot.jpg" alt="">
+                <div class="overlay">Arduino Car Robot</div>
+            </div>
+            <div class="gallery1">
+                <img src="picture/webpage.png" alt="">
+                <div class="overlay">Webpage Project using Wix application</div>
+            </div>
+            <div class="gallery1">
+                <video width="auto" controls><source src="picture/Animation.mp4" type="video/mp4"></video>
+                <div class="overlay">Animation Project</div>
+            </div>
+            <div class="gallery1">
+                <video width="auto" controls><source src="picture/advertisement.mp4" type="video/mp4"></video>
+                <div class="overlay">Advertisement Project</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>
